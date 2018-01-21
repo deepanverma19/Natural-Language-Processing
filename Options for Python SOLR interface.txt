@@ -1,0 +1,42 @@
+Options for Python SOLR interface:
+
+1) Official SOLR page - HTTP Queries/JSON Response.
+	https://lucene.apache.org/solr/guide/7_1/using-python.html
+	Python 3 code mentioned in the comments.
+	
+2) Official SOLR page - Python Response Writer
+	https://lucene.apache.org/solr/guide/7_1/response-writers.html#python-response-writer
+	Same as option 1 above but has the following changes:
+		-true and false changed to True and False
+		-Python unicode strings are used where needed
+		-ASCII output (with unicode escapes) is used for less error-prone interoperability
+		-newlines are escaped
+		-null changed to None
+		
+3) Official SOLR page - Python JDBC connection
+	https://lucene.apache.org/solr/guide/7_1/solr-jdbc-python-jython.html
+	Basically we can connect to SOLR and interact to it like a database.
+
+4) PySOLR
+	https://github.com/django-haystack/pysolr
+	Here is the link to the actual pysolr Python file.  You may be able to extract some information from here on how to use it:
+	https://github.com/django-haystack/pysolr/blob/master/pysolr.py
+
+5) SolrClient
+	https://github.com/moonlitesolutions/SolrClient
+	It is only up to version 0.2.1, so I am not sure how much functionality it has.  Last update to Github was 8 months ago.
+	It does have decent documentation though: http://solrclient.readthedocs.io/en/latest/
+	
+6) SOLRPy
+	https://pythonhosted.org/solrpy/
+	It has some documentation.  The reference section might be helpful: https://pythonhosted.org/solrpy/reference.html
+	
+7) Scorched
+	https://github.com/lugensa/scorched
+	Not sure about this one... only version 0.12.1
+
+8) SolrQ
+	http://solrq.readthedocs.io/en/latest/index.html
+	Also not sure about this one... syntax looks strange, but it might work.
+	
+	
